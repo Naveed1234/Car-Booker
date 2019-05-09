@@ -1,0 +1,512 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Style/Dashboard4ColumDesign.css" rel="stylesheet" />
+<link href="~/Style/Dashboard12Column.css" rel="stylesheet" />
+
+<style>
+
+
+    #td {
+        max-width: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #bt11 {
+        color: white;
+        /*border-radius: 40px;*/
+        padding: 5px;
+    }
+
+   
+</style>
+<br />
+<div class="container " style="border:2px black">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 fixed_header" id="">
+            <h5 style="margin-left:60px">Driver onBoard</h5>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>DriverId</th>
+                        <th>JobId</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 fixed_header fixed_header" id="">
+            <h5 style="margin-left:70px">Driver Waiting</h5>
+            <div>
+                <table class=" table-bordered">
+                    <thead>
+                        <tr>
+                            <th>DriverId</th>
+                            <th>Vehicle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehran</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 fixed_header" id="">
+            <h5 style="margin-left:60px">Driver on plot</h5>
+            <div>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>DriverId</th>
+                            <th>Ploat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>N4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-3 fixed_header">
+            <h5 style="margin-left:90px">Logs</h5>
+            <div>
+                <table class="table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>DateTime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                        <tr>
+                            <td>MNA</td>
+                            <td>123</td>
+                            <td>11:Am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container-fluid">
+    
+    <div class="row">
+        <h4 style="margin-left:130px">Command Line:&nbsp;</h4>
+        
+
+        <button type="button" id="bt11" class="btn btn-info btn-sm" style="">F1 Job Info</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F2 Edit Job</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F3 Clear Detail</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F4 save Details</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F5 Dispatch Job</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F6 View Log</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F7 Trick Driver</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F8 Complete/Cancel Job</button>
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F9 Regular Job</button>&nbsp;
+        <button type="button" id="bt11" class="btn btn-info btn-sm">F10 Allocate Driver</button>
+    </div>
+</div>
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 fixed_header1" id="">
+            <div>
+                <table class="table-bordered" style="margin-left:35px;">
+                    <thead>
+                        <tr>
+                            <th>JobId</th>
+                            <th>JobType</th>
+                            <th>CustomerName</th>
+                            <th>ContactNo</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>PickUp Address</th>
+                            <th>Drop Off</th>
+                            <th>Driver</th>
+                            <th>Vehicle</th>
+                            <th>Via</th>
+                        </tr>
+                    </thead>
+                    <tbody style=" height:235px!important;">
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td id="td">Lahoresds adsadsad sadsadsadsadsad sadsadsadsadsadsa</td>
+                            <td id="td">Narowal jdfjksdjfkdfj dkfjkl fdldkfdsl dfklds</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Driver</td>
+                            <td>MNA</td>
+                            <td>03085488943</td>
+                            <td>05-May-2019</td>
+                            <td>10:30</td>
+                            <td>Lahore</td>
+                            <td>Narowal</td>
+                            <td>Atif</td>
+                            <td>Honda car</td>
+                            <td>Ring Road</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br />
+    </div>
+</div>

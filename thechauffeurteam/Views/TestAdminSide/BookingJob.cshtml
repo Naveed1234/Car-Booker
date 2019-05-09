@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "BookingJob";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<div class="container-fluid">
+    <div class="row mr-2 ml-2">
+        <div class="col-sm-4" style="border:2px solid red">
+            <h4 style="text-align:center">Passenger Details</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="name" placeholder="Passenger Name" />
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone Number" />
+                </div>
+                <br /><br /><br />
+                <div class="col-sm-12">
+                    <input type="email" class="form-control" name="email" placeholder="Enter Email" />
+                </div>
+               <br /><br />
+            </div>
+        </div>
+        <div class="col-lg-4" style="border:2px solid red">
+            <h4 style="text-align:center"> Job Details</h4>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Yet or Latter
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="date" class="form-control" placeholder="Enter Date" />
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="date" class="form-control" placeholder="Enter Date" />
+                </div>
+                <br /><br />
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <div class="form-group" id="mainDirection">
+                                  <select class="form-control" id="slectoption" name="slectoption" style="margin-left:10px">
+                                     
+                                      <option value="">One Way</option>
+                                      <option value="return">Return</option>
+                                  </select>
+                              </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <input type="button" class="btn btn-primary" value="Airport" style="margin-left:38px" />
+                              </div>
+                          </div>
+                      </div>
+        </div>
+        <div class="col-lg-4" style="border:2px solid red">
+            <h4 style="text-align:center">Job type </h4>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <input type="radio" name="cash" value="cash" style="text-align:center" id="r1" />Cash
+                </div>
+                <div class="col-sm-3">
+                    <input type="radio" name="cash" value="account" id="r2" />Account
+                </div>
+                <div class="col-sm-3">
+
+                </div>
+                <br /><br />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" name="accountname" placeholder="Account name" class="form-control" style="margin-left:25px" id="aname" />
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="accountnumber" placeholder="Account Number" class="form-control" id="anumber" style="margin-left:20px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="row mr-2 ml-2">
+    <div class="col-lg-4" style="border:2px solid red">
+        <h4 style="text-align:center">PickUp Address  </h4>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="address" placeholder="Enter Address" />
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="premisses" placeholder="Enter Premisses" />
+            </div>
+            <br /><br /><br />
+            <div class="col-sm-12">
+                <input type="button" class="form-control btn btn-primary" value="Add Shotcut" />
+            </div>
+            <br /><br /><br />
+        </div>
+    </div>
+    <div class="col-lg-4" style="border:2px solid red">
+        <h4 style="text-align:center">Drop Off </h4>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="address" placeholder="Enter Address" />
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="premisses" placeholder="Enter Premisses" />
+            </div>
+            <br /><br /><br />
+            <div class="col-sm-12">
+                <input type="button" class="form-control btn btn-primary" value="Add Shotcut" />
+            </div>
+            <br /><br /><br />
+        </div>
+    </div>
+    <div class="col-lg-4" style="border:2px solid red">
+        <h4 style="text-align:center">Requirments </h4>
+        <input type="button" class="btn btn-primary" name="saloon" value="Saloon" style="margin-left:60px" />
+        <input type="button" class="btn btn-primary" name="estate" value="Estate" />
+        <input type="button" class="btn btn-primary" name="mpv" value="MPV" />
+        <input type="button" class="btn btn-primary" name="other" value="Others" />
+        <br /><br />
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="margin-left:60px">
+                Attribute
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#aname").hide();
+        $("#anumber").hide();
+
+
+        $("#r2").click(function () {
+
+
+            $("#aname").show();
+            $("#anumber").show();
+
+            $("#r1").click(function () {
+
+
+
+                $("#aname").hide();
+                $("#anumber").hide();
+
+
+            });
+        });
+    });
+</script>
